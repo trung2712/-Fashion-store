@@ -9,7 +9,7 @@
 <script >
 import '@fortawesome/fontawesome-free/css/all.css';
 export default {
-  name: 'Cart',
+  name: 'xe-day',
   props: {
     cardNumber: Number,
   },

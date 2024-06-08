@@ -1,28 +1,33 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="ap">
+    <HeaderWeb></HeaderWeb>
+    <DuAn></DuAn>
+    <FooterWeb></FooterWeb>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DuAn from '@/components/DuAn.vue';
+import FooterWeb from "@/components/FooterWeb.vue";
+import HeaderWeb from "@/components/HeaderWeb.vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderWeb,
+    DuAn,
+    FooterWeb,
+  },
+  mounted() {
+    document.title = 'livansport';
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+html, body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
 }
 </style>
